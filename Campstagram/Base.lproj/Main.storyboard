@@ -225,16 +225,16 @@
                                     <constraint firstAttribute="height" constant="1" id="lIw-P4-FCz"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHp-5q-0LE">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHp-5q-0LE">
                                 <rect key="frame" x="10" y="548" width="370" height="45"/>
                                 <color key="backgroundColor" name="disabledButtonColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="7Fl-zM-oux"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="가입">
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="가입">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTr-eT-U3K">
                                 <rect key="frame" x="124.66666666666669" y="782.66666666666663" width="141" height="27.333333333333371"/>
@@ -290,6 +290,7 @@
                         <outlet property="nameTextField" destination="Hju-1u-UGX" id="tmV-er-Rpq"/>
                         <outlet property="nicknameTextField" destination="I7S-ew-eBu" id="5nR-sM-Ujh"/>
                         <outlet property="passwordTextField" destination="xMT-1e-eHL" id="uXf-XF-MJb"/>
+                        <outlet property="signupButton" destination="YHp-5q-0LE" id="Ma5-f3-omK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q98-ez-VlV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
