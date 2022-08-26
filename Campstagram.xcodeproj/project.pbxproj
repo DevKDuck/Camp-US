@@ -15,6 +15,8 @@
 		8C2F3FC328B605CF003A1AA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C2F3FC128B605CF003A1AA3 /* LaunchScreen.storyboard */; };
 		8C2F3FCB28B61BA4003A1AA3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2F3FCA28B61BA4003A1AA3 /* LoginViewController.swift */; };
 		8C2F3FCD28B6202B003A1AA3 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2F3FCC28B6202B003A1AA3 /* RegisterViewController.swift */; };
+		8C95C48F28B90EEF00E7351E /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C95C48E28B90EEF00E7351E /* UIView+Extension.swift */; };
+		8C95C49128B9109200E7351E /* UIVIewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C95C49028B9109200E7351E /* UIVIewController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		8C2F3FC428B605CF003A1AA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C2F3FCA28B61BA4003A1AA3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8C2F3FCC28B6202B003A1AA3 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		8C95C48E28B90EEF00E7351E /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		8C95C49028B9109200E7351E /* UIVIewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIewController+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 				8C2F3FBF28B605CF003A1AA3 /* Assets.xcassets */,
 				8C2F3FC128B605CF003A1AA3 /* LaunchScreen.storyboard */,
 				8C2F3FC428B605CF003A1AA3 /* Info.plist */,
+				8C95C48E28B90EEF00E7351E /* UIView+Extension.swift */,
+				8C95C49028B9109200E7351E /* UIVIewController+Extension.swift */,
 			);
 			path = Campstagram;
 			sourceTree = "<group>";
@@ -144,6 +150,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C95C49128B9109200E7351E /* UIVIewController+Extension.swift in Sources */,
+				8C95C48F28B90EEF00E7351E /* UIView+Extension.swift in Sources */,
 				8C2F3FCB28B61BA4003A1AA3 /* LoginViewController.swift in Sources */,
 				8C2F3FCD28B6202B003A1AA3 /* RegisterViewController.swift in Sources */,
 				8C2F3FBB28B605CE003A1AA3 /* ViewController.swift in Sources */,

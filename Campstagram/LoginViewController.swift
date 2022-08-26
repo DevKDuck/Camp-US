@@ -11,9 +11,10 @@ class LoginViewController: UIViewController {
     var email = String()
     var password = String()
 
+    @IBOutlet weak var registerButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupAttribute()
         // Do any additional setup after loading the view.
     }
     
@@ -46,14 +47,21 @@ class LoginViewController: UIViewController {
          //수직적인 내용들 상세적인 내용들 사용할때 네이게이션 뷰 많이 사용
 
      }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func setupAttribute() {
+        //registerButton
+        
+        let text1 = "계정이 없으신가요?"
+        let text2 = "가입하기"
+        
+        let font1 = UIFont.systemFont(ofSize: 13)
+        let font2 = UIFont.boldSystemFont(ofSize: 13)
+        
+        let color1 = UIColor.darkGray
+        let color2 = UIColor(named: "facebookColor") ?? .blue
+        
+        let attributes = generateButtonAttribute(self.registerButton, texts: text1, text2, fonts: font1, font2, colors: color1, color2)
+        
+        self.registerButton.setAttributedTitle(attributes, for: .normal)
     }
-    */
 
 }
