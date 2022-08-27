@@ -60,6 +60,9 @@ class RegisterViewController: UIViewController {
         setUpTextField()
         setupAttribute()
         
+        //bug fix 
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = nil
+        
     }
     //MARK: - Actions
     @objc
@@ -86,6 +89,9 @@ class RegisterViewController: UIViewController {
         
     }
     
+    @IBAction func backButtonDidTap(_ sender: UIBarButtonItem) {
+        self.navigationController?.popViewController(animated: true)
+    }
     
     
     
