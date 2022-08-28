@@ -10,6 +10,7 @@ import UIKit
 class LoginViewController: UIViewController {
     var email = String()
     var password = String()
+    var userInfo: UserInfo?
 
     @IBOutlet weak var registerButton: UIButton!
     override func viewDidLoad() {
@@ -18,19 +19,36 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBOutlet weak var loginButton: UIButton!
     @IBAction func emailTextFieldEditingChanged(_ sender: UITextField) { //event를 Editing Changed로 줌 - 텍스트필드의 값이 변경될때마다 메소드가 호출됨
         let text = sender.text ?? ""   //옵셔널 형식으로 반환됨
+        self.loginButton.backgroundColor = text.isValidEmail() ? UIColor(named: "facebookColor") : UIColor(named: "disabledButtonColor")
+        
         self.email = text
     }
     
     
     @IBAction func passwordTextFieldEditingChanged(_ sender: UITextField) {
         let text = sender.text ?? ""
+        self.loginButton.backgroundColor = text.count > 2 ? UIColor(named: "facebookColor") : UIColor(named: "disabledButtonColor")
+        
         self.password = text
     }
     
     @IBAction func loginButtonDidTap(_ sender: UIButton) {
     //로그인
+        //회원가입정보를 전달받아서, TextField 데이터와 일치하면 로그인됨
+        guard let userInfo = userInfo else { return }
+        if userInfo.email == self.email && userInfo.password == self.password{
+            let goVC = storyboard?.instantiateViewController(withIdentifier: "TestViewController") as! TestViewController
+            
+            self.present(goVC, animated: true)
+            
+        }else{
+   
+        }
+        
+        
     }
     
      @IBAction func registerButtonDidTap(_ sender: UIButton) {
@@ -45,6 +63,10 @@ class LoginViewController: UIViewController {
 //         self.present(registerViewController, animated: true, completion: nil)
          self.navigationController?.pushViewController(registerViewController, animated: true)
          //수직적인 내용들 상세적인 내용들 사용할때 네이게이션 뷰 많이 사용
+         
+         registerViewController.userInfo = { [weak self](userInfo) in
+             self?.userInfo = userInfo
+         }
 
      }
     private func setupAttribute() {
