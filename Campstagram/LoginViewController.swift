@@ -40,10 +40,9 @@ class LoginViewController: UIViewController {
         //회원가입정보를 전달받아서, TextField 데이터와 일치하면 로그인됨
         guard let userInfo = userInfo else { return }
         if userInfo.email == self.email && userInfo.password == self.password{
-            let goVC = storyboard?.instantiateViewController(withIdentifier: "TestViewController") as! TestViewController
-            
+            let goVC = storyboard?.instantiateViewController(withIdentifier: "TabbarViewController") as! UITabBarController
+            goVC.modalPresentationStyle = .fullScreen
             self.present(goVC, animated: true)
-            
         }else{
    
         }
