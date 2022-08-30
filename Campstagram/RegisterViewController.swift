@@ -68,12 +68,17 @@ class RegisterViewController: UIViewController {
         super.viewDidLoad()
         setUpTextField()
         setupAttribute()
+ 
         
         //bug fix
         self.navigationController?.interactivePopGestureRecognizer?.delegate = nil
         
+
+        
     }
     //MARK: - Actions
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){      self.view.endEditing(true)}
     @objc
     func textFieldEditingChanged(_ sender: UITextField){ //코드로 Action함수 대신  구현
         let text = sender.text ?? ""

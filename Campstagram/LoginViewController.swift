@@ -18,6 +18,7 @@ class LoginViewController: UIViewController {
         setupAttribute()
         // Do any additional setup after loading the view.
     }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){      self.view.endEditing(true)}
     
     @IBOutlet weak var loginButton: UIButton!
     @IBAction func emailTextFieldEditingChanged(_ sender: UITextField) { //event를 Editing Changed로 줌 - 텍스트필드의 값이 변경될때마다 메소드가 호출됨
