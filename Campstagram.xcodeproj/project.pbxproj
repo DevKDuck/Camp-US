@@ -15,6 +15,9 @@
 		8C2F3FC328B605CF003A1AA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C2F3FC128B605CF003A1AA3 /* LaunchScreen.storyboard */; };
 		8C2F3FCB28B61BA4003A1AA3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2F3FCA28B61BA4003A1AA3 /* LoginViewController.swift */; };
 		8C2F3FCD28B6202B003A1AA3 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2F3FCC28B6202B003A1AA3 /* RegisterViewController.swift */; };
+		8C7D3B5828BFA5440067F028 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7D3B5728BFA5440067F028 /* ProfileViewController.swift */; };
+		8C7D3B5C28BFA8630067F028 /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7D3B5A28BFA8630067F028 /* ProfileCollectionViewCell.swift */; };
+		8C7D3B5D28BFA8630067F028 /* ProfileCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C7D3B5B28BFA8630067F028 /* ProfileCollectionViewCell.xib */; };
 		8C8966A528BDED8300F7200D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8966A428BDED8300F7200D /* HomeViewController.swift */; };
 		8C8966A928BDF08400F7200D /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8966A728BDF08400F7200D /* FeedTableViewCell.swift */; };
 		8C8966AA28BDF08400F7200D /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C8966A828BDF08400F7200D /* FeedTableViewCell.xib */; };
@@ -39,6 +42,9 @@
 		8C2F3FC428B605CF003A1AA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C2F3FCA28B61BA4003A1AA3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8C2F3FCC28B6202B003A1AA3 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		8C7D3B5728BFA5440067F028 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		8C7D3B5A28BFA8630067F028 /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
+		8C7D3B5B28BFA8630067F028 /* ProfileCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCollectionViewCell.xib; sourceTree = "<group>"; };
 		8C8966A428BDED8300F7200D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8C8966A728BDF08400F7200D /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		8C8966A828BDF08400F7200D /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
@@ -82,6 +88,7 @@
 		8C2F3FB528B605CE003A1AA3 /* Campstagram */ = {
 			isa = PBXGroup;
 			children = (
+				8C7D3B5628BFA51D0067F028 /* Profile */,
 				8C8966A328BDED5800F7200D /* Home */,
 				8C2F3FCC28B6202B003A1AA3 /* RegisterViewController.swift */,
 				8C95C49228BBB14200E7351E /* UserInfo.swift */,
@@ -98,6 +105,24 @@
 				8C95C49028B9109200E7351E /* UIVIewController+Extension.swift */,
 			);
 			path = Campstagram;
+			sourceTree = "<group>";
+		};
+		8C7D3B5628BFA51D0067F028 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				8C7D3B5928BFA83D0067F028 /* Cell */,
+				8C7D3B5728BFA5440067F028 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		8C7D3B5928BFA83D0067F028 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8C7D3B5A28BFA8630067F028 /* ProfileCollectionViewCell.swift */,
+				8C7D3B5B28BFA8630067F028 /* ProfileCollectionViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		8C8966A328BDED5800F7200D /* Home */ = {
@@ -183,6 +208,7 @@
 				8C2F3FC328B605CF003A1AA3 /* LaunchScreen.storyboard in Resources */,
 				8C8966AA28BDF08400F7200D /* FeedTableViewCell.xib in Resources */,
 				8C2F3FC028B605CF003A1AA3 /* Assets.xcassets in Resources */,
+				8C7D3B5D28BFA8630067F028 /* ProfileCollectionViewCell.xib in Resources */,
 				8C8966AE28BE066B00F7200D /* StoryTableViewCell.xib in Resources */,
 				8C8966B228BE0AF900F7200D /* StoryCollectionViewCell.xib in Resources */,
 				8C2F3FBE28B605CE003A1AA3 /* Main.storyboard in Resources */,
@@ -200,6 +226,8 @@
 				8C95C48F28B90EEF00E7351E /* UIView+Extension.swift in Sources */,
 				8C2F3FCB28B61BA4003A1AA3 /* LoginViewController.swift in Sources */,
 				8C2F3FCD28B6202B003A1AA3 /* RegisterViewController.swift in Sources */,
+				8C7D3B5C28BFA8630067F028 /* ProfileCollectionViewCell.swift in Sources */,
+				8C7D3B5828BFA5440067F028 /* ProfileViewController.swift in Sources */,
 				8C95C49328BBB14200E7351E /* UserInfo.swift in Sources */,
 				8C8966A528BDED8300F7200D /* HomeViewController.swift in Sources */,
 				8C2F3FBB28B605CE003A1AA3 /* ViewController.swift in Sources */,
