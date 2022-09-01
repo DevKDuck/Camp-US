@@ -59,7 +59,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.96078437569999997" green="0.96078437569999997" blue="0.96078437569999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="cbW-PG-lsO" firstAttribute="centerX" secondItem="xOt-0V-Hvq" secondAttribute="centerX" id="GnK-38-ci5"/>
                             <constraint firstItem="K4f-9V-WjT" firstAttribute="centerX" secondItem="xOt-0V-Hvq" secondAttribute="centerX" id="Iw9-tW-AhA"/>
@@ -71,6 +72,7 @@
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="xOt-0V-Hvq" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="XLa-hh-0cl"/>
                 <constraint firstAttribute="bottom" secondItem="xOt-0V-Hvq" secondAttribute="bottom" id="ZYk-zF-DfC"/>
