@@ -32,24 +32,126 @@
                             <constraint firstAttribute="width" constant="24" id="mzx-6p-nZf"/>
                         </constraints>
                     </imageView>
+                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lZZ-bK-rzb">
+                        <rect key="frame" x="354" y="118" width="31" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="31" id="ENH-Ba-x4g"/>
+                            <constraint firstAttribute="height" constant="31" id="oyB-kA-iOv"/>
+                        </constraints>
+                        <color key="tintColor" red="0.26397270290000002" green="0.73358269050000002" blue="0.31701513580000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="8" maxY="10"/>
+                        <state key="normal" image="ic_my_invite">
+                            <color key="titleColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TUc-wV-yZk">
+                        <rect key="frame" x="13" y="118" width="320" height="31"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="프로필 편집">
+                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="12"/>
+                            <color key="baseForegroundColor" systemColor="labelColor"/>
+                        </buttonConfiguration>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5Y-kZ-yDo">
+                        <rect key="frame" x="21" y="98.5" width="66" height="16"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Uu1-qO-QFv">
+                        <rect key="frame" x="138.5" y="30" width="194.5" height="36"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="rQN-gE-yE5">
+                                <rect key="frame" x="0.0" y="0.0" width="31.5" height="36"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0A-B9-VW0">
+                                        <rect key="frame" x="0.0" y="0.0" width="31.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="게시글" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E6o-8o-Vc0">
+                                        <rect key="frame" x="0.0" y="21.5" width="31.5" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="gYt-rK-yoc">
+                                <rect key="frame" x="81.5" y="0.0" width="31.5" height="36"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r4I-FP-1NO">
+                                        <rect key="frame" x="0.0" y="0.0" width="31.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="팔로워" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iE3-JK-QDs">
+                                        <rect key="frame" x="0.0" y="21.5" width="31.5" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="E2r-he-pL4">
+                                <rect key="frame" x="163" y="0.0" width="31.5" height="36"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qXe-xe-I6N">
+                                        <rect key="frame" x="0.0" y="0.0" width="31.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="팔로잉" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wgy-hl-yr6">
+                                        <rect key="frame" x="0.0" y="21.5" width="31.5" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="TUc-wV-yZk" firstAttribute="height" secondItem="lZZ-bK-rzb" secondAttribute="height" id="4mF-M6-ANG"/>
+                <constraint firstItem="v5Y-kZ-yDo" firstAttribute="centerX" secondItem="Z72-JA-Vry" secondAttribute="centerX" id="AUb-7Z-vsY"/>
+                <constraint firstItem="Uu1-qO-QFv" firstAttribute="centerY" secondItem="Z72-JA-Vry" secondAttribute="centerY" constant="-6" id="B8F-ol-nl4"/>
+                <constraint firstItem="TUc-wV-yZk" firstAttribute="centerY" secondItem="lZZ-bK-rzb" secondAttribute="centerY" id="ISR-oW-rWp"/>
                 <constraint firstItem="50u-UW-jKA" firstAttribute="bottom" secondItem="Z72-JA-Vry" secondAttribute="bottom" constant="0.29999999999999999" id="JtQ-7m-Yip"/>
+                <constraint firstItem="TUc-wV-yZk" firstAttribute="leading" secondItem="Z72-JA-Vry" secondAttribute="leading" constant="3" id="Nnp-51-vHQ"/>
+                <constraint firstItem="v5Y-kZ-yDo" firstAttribute="top" secondItem="50u-UW-jKA" secondAttribute="bottom" id="QCr-XC-C2L"/>
+                <constraint firstAttribute="bottom" secondItem="lZZ-bK-rzb" secondAttribute="bottom" constant="10" id="QSa-qg-yOo"/>
+                <constraint firstItem="Uu1-qO-QFv" firstAttribute="leading" relation="lessThanOrEqual" secondItem="Z72-JA-Vry" secondAttribute="trailing" constant="128" id="W3s-Sx-trz"/>
                 <constraint firstItem="Z72-JA-Vry" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="Ydf-36-7If"/>
+                <constraint firstItem="lZZ-bK-rzb" firstAttribute="leading" secondItem="TUc-wV-yZk" secondAttribute="trailing" constant="21" id="ZD7-fH-XRp"/>
                 <constraint firstItem="50u-UW-jKA" firstAttribute="trailing" secondItem="Z72-JA-Vry" secondAttribute="trailing" id="aVT-0L-sUp"/>
                 <constraint firstItem="Z72-JA-Vry" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="lAY-2q-tiW"/>
+                <constraint firstAttribute="trailing" secondItem="lZZ-bK-rzb" secondAttribute="trailing" constant="10" id="lUJ-aZ-B65"/>
+                <constraint firstItem="Uu1-qO-QFv" firstAttribute="trailing" secondItem="TUc-wV-yZk" secondAttribute="trailing" id="mI6-T3-GxD"/>
             </constraints>
             <connections>
+                <outlet property="addFriendsButton" destination="lZZ-bK-rzb" id="2vD-mc-4Rb"/>
                 <outlet property="addProfileImageView" destination="50u-UW-jKA" id="Rqe-39-pm4"/>
+                <outlet property="editButton" destination="TUc-wV-yZk" id="awD-SF-dGu"/>
+                <outlet property="followerCountLabel" destination="r4I-FP-1NO" id="mhY-dH-ssm"/>
+                <outlet property="followingCountLabel" destination="qXe-xe-I6N" id="Spp-lb-In6"/>
+                <outlet property="postingCountLabel" destination="L0A-B9-VW0" id="h3V-7G-8rG"/>
                 <outlet property="profileImageView" destination="Z72-JA-Vry" id="XCv-bd-COI"/>
             </connections>
             <point key="canvasLocation" x="131.15942028985509" y="99.441964285714278"/>
         </collectionViewCell>
     </objects>
     <resources>
+        <image name="ic_my_invite" width="512" height="512"/>
         <image name="plus.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
