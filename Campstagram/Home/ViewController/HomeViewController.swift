@@ -6,12 +6,15 @@
 //
 
 import UIKit
+import Kingfisher
 
 class HomeViewController: UIViewController {
     
     
     
     @IBOutlet weak var tableView: UITableView!
+    var arrayCat : [FeedModel] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,6 +30,8 @@ class HomeViewController: UIViewController {
         
         let storyNib = UINib(nibName: "StoryTableViewCell", bundle: nil)
         tableView.register(storyNib, forCellReuseIdentifier: "StoryTableViewCell")
+        let input = FeedAPIInput(limit: 20, Page: 10)
+        FeedDataManager().feedDataMangager(input, self)
     }
     
 }
@@ -34,7 +39,7 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return arrayCat.count + 1
     } //한 섹션에 몇개의 셀을 넣을 것인지?
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -48,7 +53,10 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
                 return UITableViewCell()
                 
             }
-            
+            if let urlString = arrayCat[indexPath.row - 1].url{
+                let url = URL(string: urlString)
+                cell.imageViewFeed.kf.setImage(with: url)
+            }
             cell.selectionStyle = .none //cell이 선택되었을때 고유한 스타일을 없앰
             return cell
         }//어떤 셀을 보여줄 것인지
@@ -90,4 +98,12 @@ extension HomeViewController : UICollectionViewDelegate,UICollectionViewDataSour
         return CGSize(width: 50, height: 60)
     }
     
+}
+
+extension HomeViewController{
+    func sucessAPI(_ result: [FeedModel]) {
+        arrayCat = result
+        tableView.reloadData()
+        
+    }
 }

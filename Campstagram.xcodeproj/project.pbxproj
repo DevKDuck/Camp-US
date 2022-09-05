@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		357FF5184F2A6DD3B0836673 /* Pods_Campstagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD3ED3F578F152A67782A75 /* Pods_Campstagram.framework */; };
+		8C2350BB28C5ECE9007900F9 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 8C2350BA28C5ECE9007900F9 /* Kingfisher */; };
 		8C274EE228C10B9600396984 /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C274EE028C10B9600396984 /* PostCollectionViewCell.swift */; };
 		8C274EE328C10B9600396984 /* PostCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C274EE128C10B9600396984 /* PostCollectionViewCell.xib */; };
 		8C2F3FB728B605CE003A1AA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2F3FB628B605CE003A1AA3 /* AppDelegate.swift */; };
@@ -17,6 +19,13 @@
 		8C2F3FC328B605CF003A1AA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C2F3FC128B605CF003A1AA3 /* LaunchScreen.storyboard */; };
 		8C2F3FCB28B61BA4003A1AA3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2F3FCA28B61BA4003A1AA3 /* LoginViewController.swift */; };
 		8C2F3FCD28B6202B003A1AA3 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2F3FCC28B6202B003A1AA3 /* RegisterViewController.swift */; };
+		8C34084828C5C88200DB7A66 /* TradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C34084728C5C88200DB7A66 /* TradeViewController.swift */; };
+		8C34084B28C5CBC800DB7A66 /* TradeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C34084928C5CBC800DB7A66 /* TradeTableViewCell.swift */; };
+		8C34084C28C5CBC800DB7A66 /* TradeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C34084A28C5CBC800DB7A66 /* TradeTableViewCell.xib */; };
+		8C34084E28C5D27A00DB7A66 /* TradeResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C34084D28C5D27A00DB7A66 /* TradeResultViewController.swift */; };
+		8C34085128C5E4B900DB7A66 /* FeedAPIInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C34085028C5E4B900DB7A66 /* FeedAPIInput.swift */; };
+		8C34085328C5E56400DB7A66 /* FeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C34085228C5E56400DB7A66 /* FeedModel.swift */; };
+		8C34085528C5E5A200DB7A66 /* FeedDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C34085428C5E5A200DB7A66 /* FeedDataManager.swift */; };
 		8C7D3B5828BFA5440067F028 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7D3B5728BFA5440067F028 /* ProfileViewController.swift */; };
 		8C7D3B5C28BFA8630067F028 /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7D3B5A28BFA8630067F028 /* ProfileCollectionViewCell.swift */; };
 		8C7D3B5D28BFA8630067F028 /* ProfileCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C7D3B5B28BFA8630067F028 /* ProfileCollectionViewCell.xib */; };
@@ -34,6 +43,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		58A209D5AA5A8F66EECFEEC6 /* Pods-Campstagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Campstagram.debug.xcconfig"; path = "Target Support Files/Pods-Campstagram/Pods-Campstagram.debug.xcconfig"; sourceTree = "<group>"; };
 		8C274EE028C10B9600396984 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
 		8C274EE128C10B9600396984 /* PostCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCollectionViewCell.xib; sourceTree = "<group>"; };
 		8C2F3FB328B605CE003A1AA3 /* Campstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Campstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +56,13 @@
 		8C2F3FC428B605CF003A1AA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C2F3FCA28B61BA4003A1AA3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8C2F3FCC28B6202B003A1AA3 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		8C34084728C5C88200DB7A66 /* TradeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeViewController.swift; sourceTree = "<group>"; };
+		8C34084928C5CBC800DB7A66 /* TradeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TradeTableViewCell.swift; path = Campstagram/Trade/TradeTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		8C34084A28C5CBC800DB7A66 /* TradeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TradeTableViewCell.xib; path = Campstagram/Trade/TradeTableViewCell.xib; sourceTree = SOURCE_ROOT; };
+		8C34084D28C5D27A00DB7A66 /* TradeResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeResultViewController.swift; sourceTree = "<group>"; };
+		8C34085028C5E4B900DB7A66 /* FeedAPIInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAPIInput.swift; sourceTree = "<group>"; };
+		8C34085228C5E56400DB7A66 /* FeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModel.swift; sourceTree = "<group>"; };
+		8C34085428C5E5A200DB7A66 /* FeedDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDataManager.swift; sourceTree = "<group>"; };
 		8C7D3B5728BFA5440067F028 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		8C7D3B5A28BFA8630067F028 /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
 		8C7D3B5B28BFA8630067F028 /* ProfileCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -60,6 +77,8 @@
 		8C95C48E28B90EEF00E7351E /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		8C95C49028B9109200E7351E /* UIVIewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIewController+Extension.swift"; sourceTree = "<group>"; };
 		8C95C49228BBB14200E7351E /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		DFD3ED3F578F152A67782A75 /* Pods_Campstagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Campstagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6A616ECA9BA36559DAA91A8 /* Pods-Campstagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Campstagram.release.xcconfig"; path = "Target Support Files/Pods-Campstagram/Pods-Campstagram.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,12 +86,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C2350BB28C5ECE9007900F9 /* Kingfisher in Frameworks */,
+				357FF5184F2A6DD3B0836673 /* Pods_Campstagram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		533A9E1D467D0A86432CA1BB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				58A209D5AA5A8F66EECFEEC6 /* Pods-Campstagram.debug.xcconfig */,
+				F6A616ECA9BA36559DAA91A8 /* Pods-Campstagram.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8C274EDE28C10B6700396984 /* ProfileCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +126,8 @@
 			children = (
 				8C2F3FB528B605CE003A1AA3 /* Campstagram */,
 				8C2F3FB428B605CE003A1AA3 /* Products */,
+				533A9E1D467D0A86432CA1BB /* Pods */,
+				FFCF421500C1FCB11CC705F0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,30 +142,84 @@
 		8C2F3FB528B605CE003A1AA3 /* Campstagram */ = {
 			isa = PBXGroup;
 			children = (
+				8C34084628C5C7D900DB7A66 /* Extension */,
+				8C34084528C5C7A600DB7A66 /* Login */,
+				8C34084228C5C74400DB7A66 /* Trade */,
 				8C7D3B5628BFA51D0067F028 /* Profile */,
 				8C8966A328BDED5800F7200D /* Home */,
-				8C2F3FCC28B6202B003A1AA3 /* RegisterViewController.swift */,
-				8C95C49228BBB14200E7351E /* UserInfo.swift */,
 				8C2F3FB628B605CE003A1AA3 /* AppDelegate.swift */,
 				8C2F3FB828B605CE003A1AA3 /* SceneDelegate.swift */,
 				8C2F3FBA28B605CE003A1AA3 /* ViewController.swift */,
 				8C2F3FBC28B605CE003A1AA3 /* Main.storyboard */,
 				8C8D852628BBB905009DBAB9 /* TestViewController.swift */,
-				8C2F3FCA28B61BA4003A1AA3 /* LoginViewController.swift */,
 				8C2F3FBF28B605CF003A1AA3 /* Assets.xcassets */,
 				8C2F3FC128B605CF003A1AA3 /* LaunchScreen.storyboard */,
 				8C2F3FC428B605CF003A1AA3 /* Info.plist */,
+			);
+			path = Campstagram;
+			sourceTree = "<group>";
+		};
+		8C34084228C5C74400DB7A66 /* Trade */ = {
+			isa = PBXGroup;
+			children = (
+				8C34084D28C5D27A00DB7A66 /* TradeResultViewController.swift */,
+				8C34084928C5CBC800DB7A66 /* TradeTableViewCell.swift */,
+				8C34084A28C5CBC800DB7A66 /* TradeTableViewCell.xib */,
+				8C34084728C5C88200DB7A66 /* TradeViewController.swift */,
+			);
+			path = Trade;
+			sourceTree = "<group>";
+		};
+		8C34084328C5C76A00DB7A66 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8C7D3B5728BFA5440067F028 /* ProfileViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8C34084428C5C78600DB7A66 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8C8966A428BDED8300F7200D /* HomeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8C34084528C5C7A600DB7A66 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				8C2F3FCA28B61BA4003A1AA3 /* LoginViewController.swift */,
+				8C2F3FCC28B6202B003A1AA3 /* RegisterViewController.swift */,
+				8C95C49228BBB14200E7351E /* UserInfo.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		8C34084628C5C7D900DB7A66 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
 				8C95C48E28B90EEF00E7351E /* UIView+Extension.swift */,
 				8C95C49028B9109200E7351E /* UIVIewController+Extension.swift */,
 			);
-			path = Campstagram;
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		8C34084F28C5E49600DB7A66 /* FeedDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				8C34085028C5E4B900DB7A66 /* FeedAPIInput.swift */,
+				8C34085228C5E56400DB7A66 /* FeedModel.swift */,
+				8C34085428C5E5A200DB7A66 /* FeedDataManager.swift */,
+			);
+			path = FeedDataManager;
 			sourceTree = "<group>";
 		};
 		8C7D3B5628BFA51D0067F028 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				8C34084328C5C76A00DB7A66 /* ViewController */,
 				8C7D3B5928BFA83D0067F028 /* Cell */,
-				8C7D3B5728BFA5440067F028 /* ProfileViewController.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -150,8 +236,9 @@
 		8C8966A328BDED5800F7200D /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				8C34084F28C5E49600DB7A66 /* FeedDataManager */,
+				8C34084428C5C78600DB7A66 /* ViewController */,
 				8C8966A628BDF04E00F7200D /* Cell */,
-				8C8966A428BDED8300F7200D /* HomeViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -169,6 +256,14 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		FFCF421500C1FCB11CC705F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DFD3ED3F578F152A67782A75 /* Pods_Campstagram.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -176,15 +271,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8C2F3FC728B605CF003A1AA3 /* Build configuration list for PBXNativeTarget "Campstagram" */;
 			buildPhases = (
+				D963FBEDD98CEE8379A72022 /* [CP] Check Pods Manifest.lock */,
 				8C2F3FAF28B605CE003A1AA3 /* Sources */,
 				8C2F3FB028B605CE003A1AA3 /* Frameworks */,
 				8C2F3FB128B605CE003A1AA3 /* Resources */,
+				18C34BD467E46D9745AD5AC1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Campstagram;
+			packageProductDependencies = (
+				8C2350BA28C5ECE9007900F9 /* Kingfisher */,
+			);
 			productName = Campstagram;
 			productReference = 8C2F3FB328B605CE003A1AA3 /* Campstagram.app */;
 			productType = "com.apple.product-type.application";
@@ -213,6 +313,9 @@
 				Base,
 			);
 			mainGroup = 8C2F3FAA28B605CE003A1AA3;
+			packageReferences = (
+				8C2350B928C5ECE9007900F9 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 8C2F3FB428B605CE003A1AA3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,6 +335,7 @@
 				8C8966AA28BDF08400F7200D /* FeedTableViewCell.xib in Resources */,
 				8C2F3FC028B605CF003A1AA3 /* Assets.xcassets in Resources */,
 				8C7D3B5D28BFA8630067F028 /* ProfileCollectionViewCell.xib in Resources */,
+				8C34084C28C5CBC800DB7A66 /* TradeTableViewCell.xib in Resources */,
 				8C8966AE28BE066B00F7200D /* StoryTableViewCell.xib in Resources */,
 				8C8966B228BE0AF900F7200D /* StoryCollectionViewCell.xib in Resources */,
 				8C2F3FBE28B605CE003A1AA3 /* Main.storyboard in Resources */,
@@ -239,6 +343,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18C34BD467E46D9745AD5AC1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Campstagram/Pods-Campstagram-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Campstagram/Pods-Campstagram-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Campstagram/Pods-Campstagram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D963FBEDD98CEE8379A72022 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Campstagram-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8C2F3FAF28B605CE003A1AA3 /* Sources */ = {
@@ -249,14 +395,20 @@
 				8C95C48F28B90EEF00E7351E /* UIView+Extension.swift in Sources */,
 				8C2F3FCB28B61BA4003A1AA3 /* LoginViewController.swift in Sources */,
 				8C2F3FCD28B6202B003A1AA3 /* RegisterViewController.swift in Sources */,
+				8C34085328C5E56400DB7A66 /* FeedModel.swift in Sources */,
+				8C34084B28C5CBC800DB7A66 /* TradeTableViewCell.swift in Sources */,
 				8C274EE228C10B9600396984 /* PostCollectionViewCell.swift in Sources */,
 				8C7D3B5C28BFA8630067F028 /* ProfileCollectionViewCell.swift in Sources */,
+				8C34085128C5E4B900DB7A66 /* FeedAPIInput.swift in Sources */,
+				8C34085528C5E5A200DB7A66 /* FeedDataManager.swift in Sources */,
+				8C34084828C5C88200DB7A66 /* TradeViewController.swift in Sources */,
 				8C7D3B5828BFA5440067F028 /* ProfileViewController.swift in Sources */,
 				8C95C49328BBB14200E7351E /* UserInfo.swift in Sources */,
 				8C8966A528BDED8300F7200D /* HomeViewController.swift in Sources */,
 				8C2F3FBB28B605CE003A1AA3 /* ViewController.swift in Sources */,
 				8C2F3FB728B605CE003A1AA3 /* AppDelegate.swift in Sources */,
 				8C8966B128BE0AF900F7200D /* StoryCollectionViewCell.swift in Sources */,
+				8C34084E28C5D27A00DB7A66 /* TradeResultViewController.swift in Sources */,
 				8C8D852728BBB905009DBAB9 /* TestViewController.swift in Sources */,
 				8C2F3FB928B605CE003A1AA3 /* SceneDelegate.swift in Sources */,
 				8C8966A928BDF08400F7200D /* FeedTableViewCell.swift in Sources */,
@@ -402,6 +554,7 @@
 		};
 		8C2F3FC828B605CF003A1AA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58A209D5AA5A8F66EECFEEC6 /* Pods-Campstagram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -430,6 +583,7 @@
 		};
 		8C2F3FC928B605CF003A1AA3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6A616ECA9BA36559DAA91A8 /* Pods-Campstagram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -478,6 +632,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8C2350B928C5ECE9007900F9 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8C2350BA28C5ECE9007900F9 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8C2350B928C5ECE9007900F9 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8C2F3FAB28B605CE003A1AA3 /* Project object */;
 }
