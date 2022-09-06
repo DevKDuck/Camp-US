@@ -11,11 +11,13 @@ class ProfileViewController: UIViewController {
     //MARK - Properties
     @IBOutlet weak var profileCollectionView: UICollectionView!
     
+    var userFeedData: UserFeedModel?
     
     //MARK - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCollectionView()
+        setupData()
     }
     
     //MARK - Actions
@@ -29,8 +31,10 @@ class ProfileViewController: UIViewController {
         profileCollectionView.register(UINib(nibName: "ProfileCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: ProfileCollectionViewCell.identifier)
         //cell 등록하기
         profileCollectionView.register(UINib(nibName: "PostCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: PostCollectionViewCell.identifier)
-        
-        
+    }
+    
+    private func setupData() {
+//        UserFeedDataManager().getUserFeed(self)
     }
     
 }
@@ -65,6 +69,10 @@ extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataS
 
         default:
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PostCollectionViewCell", for: indexPath) as? PostCollectionViewCell else { fatalError("셀 타입 캐스팅 실패..")}
+            
+            let itemIndex = indexPath.item
+//            self.userFeedData[itemIndex]
+//            cell.setupData(imageURLStr: <#T##String?#>)
         return cell
         }//cell 생성
     }
@@ -100,4 +108,11 @@ extension ProfileViewController: UICollectionViewDelegateFlowLayout{
             return CGFloat(1)
         }
     }//line 사이 간격
+}
+
+extension ProfileViewController {
+    func successFeedAPI(_ result: UserFeedModel){
+//        GetUserPosts
+//        self.userFeedData = result
+    }
 }

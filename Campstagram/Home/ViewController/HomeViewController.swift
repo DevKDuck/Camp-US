@@ -15,6 +15,8 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var arrayCat : [FeedModel] = []
     
+    let imagePickerViewController = UIImagePickerController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -32,6 +34,12 @@ class HomeViewController: UIViewController {
         tableView.register(storyNib, forCellReuseIdentifier: "StoryTableViewCell")
         let input = FeedAPIInput(limit: 20, Page: 10)
         FeedDataManager().feedDataMangager(input, self)
+        
+        imagePickerViewController.delegate = self
+    }
+    @IBAction func buttonGoAlbum(_ sender: Any) {
+        self.imagePickerViewController.sourceType = .photoLibrary // 앨범을 소스타입으로 둘것임
+        self.present(imagePickerViewController, animated: true, completion: nil)
     }
     
 }
@@ -106,4 +114,16 @@ extension HomeViewController{
         tableView.reloadData()
         
     }
+}
+
+extension HomeViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let image = info[UIImagePickerController.InfoKey.originalImage]as? UIImage{
+            let imageString = "https://firebasestorage.googleapis.com/v0/b/catstargram-d7fbf.appspot.com/o/Cat1?alt=media&token=e92d1af6-ceb3-4a0c-9ba9-acd5cf534a42"
+            let input = FeedUploadInput(content: "고양이입니다", postImage: [imageString])
+            FeedUploadDataManager().posts(self, input)
+            
+            self.dismiss(animated: true, completion: nil)
+        } // 이미지 변수안에 UIImage 데이터의 형태로 들어감
+    } //이미지pick했을때 발생하는 메소드
 }
