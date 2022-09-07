@@ -19,7 +19,7 @@ class PostCollectionViewCell: UICollectionViewCell {
     }
     
     
-    public func setupData(imageURLStr: String?){
+    public func setupData(_ imageURLStr: String?){
         //이미지 뷰의 이미지를 업로드함
         guard let  imageURLStr = imageURLStr else {return}
         if let url = URL(string: imageURLStr){

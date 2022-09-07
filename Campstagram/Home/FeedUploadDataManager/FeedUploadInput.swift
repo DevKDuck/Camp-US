@@ -7,5 +7,5 @@
 
 struct FeedUploadInput: Encodable {
     var content : String?
-    var postImage: [String]?
+    var postImgUrl: [String]?
 }

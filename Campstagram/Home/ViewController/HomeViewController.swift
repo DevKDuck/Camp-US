@@ -109,7 +109,7 @@ extension HomeViewController : UICollectionViewDelegate,UICollectionViewDataSour
 }
 
 extension HomeViewController{
-    func sucessAPI(_ result: [FeedModel]) {
+    func successAPI(_ result: [FeedModel]) {
         arrayCat = result
         tableView.reloadData()
         
@@ -119,9 +119,10 @@ extension HomeViewController{
 extension HomeViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let image = info[UIImagePickerController.InfoKey.originalImage]as? UIImage{
-            let imageString = "https://firebasestorage.googleapis.com/v0/b/catstargram-d7fbf.appspot.com/o/Cat1?alt=media&token=e92d1af6-ceb3-4a0c-9ba9-acd5cf534a42"
-            let input = FeedUploadInput(content: "고양이입니다", postImage: [imageString])
+            let imageString = "gs://catstagram-d7fbf.appspot.com/Cat"
+            let input = FeedUploadInput(content: "저희 상이입니다. 귀엽지 않나요?", postImgUrl: [imageString])
             FeedUploadDataManager().posts(self, input)
+            print("사진이 업로 된것일까")
             
             self.dismiss(animated: true, completion: nil)
         } // 이미지 변수안에 UIImage 데이터의 형태로 들어감

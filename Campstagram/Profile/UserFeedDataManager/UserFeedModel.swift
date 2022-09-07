@@ -41,9 +41,9 @@ struct GetUserPosts: Decodable {
 
 struct UserFeedModelResult: Decodable {
     
-    let isMyFeed: Bool?
+    let _isMyFeed: Bool?
     let getUserInfo: GetUserInfo?
-    let getUserPosts: [GetUserPosts]?
+    let getUserPosts: [GetUserPosts]?   
 
 }
 
