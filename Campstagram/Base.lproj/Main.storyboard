@@ -496,14 +496,53 @@
                     </tabBar>
                     <connections>
                         <segue destination="MOy-nT-Edi" kind="relationship" relationship="viewControllers" id="evO-ms-LQT"/>
-                        <segue destination="EFI-mt-VS0" kind="relationship" relationship="viewControllers" id="3Qx-dq-a6t"/>
                         <segue destination="8up-sx-XQK" kind="relationship" relationship="viewControllers" id="ckn-UN-HhC"/>
+                        <segue destination="EFI-mt-VS0" kind="relationship" relationship="viewControllers" id="3Qx-dq-a6t"/>
                         <segue destination="AP4-s8-YNy" kind="relationship" relationship="viewControllers" id="ujr-r4-kNm"/>
+                        <segue destination="3iX-uI-tgS" kind="relationship" relationship="viewControllers" id="b47-lZ-Cz1"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JJ8-XP-no0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="872" y="829"/>
+        </scene>
+        <!--릴스-->
+        <scene sceneID="aE4-zU-86S">
+            <objects>
+                <viewController storyboardIdentifier="ReelsViewController" id="3iX-uI-tgS" customClass="ReelsViewController" customModule="Campstagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hzP-vA-oKy">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="XMc-oj-9e9">
+                                <rect key="frame" x="0.0" y="44" width="390" height="717"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="eQN-ix-eIo">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qVR-4z-An8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XMc-oj-9e9" firstAttribute="top" secondItem="qVR-4z-An8" secondAttribute="top" id="7S7-v6-cpc"/>
+                            <constraint firstItem="qVR-4z-An8" firstAttribute="bottom" secondItem="XMc-oj-9e9" secondAttribute="bottom" id="Bri-ef-5t0"/>
+                            <constraint firstItem="qVR-4z-An8" firstAttribute="trailing" secondItem="XMc-oj-9e9" secondAttribute="trailing" id="u3T-Jo-900"/>
+                            <constraint firstItem="XMc-oj-9e9" firstAttribute="leading" secondItem="qVR-4z-An8" secondAttribute="leading" id="vc5-2j-D5C"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="릴스" id="zWq-jg-OAy"/>
+                    <connections>
+                        <outlet property="collectionView" destination="XMc-oj-9e9" id="Cyh-Aq-S1J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HRU-h8-7ZB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1666" y="829"/>
         </scene>
         <!--Test View Controller-->
         <scene sceneID="bqb-r3-LYT">

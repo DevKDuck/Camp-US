@@ -15,6 +15,7 @@
 		8C2350C628C720FB007900F9 /* UserFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2350C528C720FB007900F9 /* UserFeedModel.swift */; };
 		8C2350C828C724ED007900F9 /* UserFeedDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2350C728C724ED007900F9 /* UserFeedDataManager.swift */; };
 		8C2350CA28C8A0C8007900F9 /* DeleteUserFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2350C928C8A0C8007900F9 /* DeleteUserFeed.swift */; };
+		8C2350CC28C9D31B007900F9 /* ReelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2350CB28C9D31B007900F9 /* ReelsViewController.swift */; };
 		8C274EE228C10B9600396984 /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C274EE028C10B9600396984 /* PostCollectionViewCell.swift */; };
 		8C274EE328C10B9600396984 /* PostCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C274EE128C10B9600396984 /* PostCollectionViewCell.xib */; };
 		8C2F3FB728B605CE003A1AA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2F3FB628B605CE003A1AA3 /* AppDelegate.swift */; };
@@ -43,6 +44,8 @@
 		8C8966B128BE0AF900F7200D /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8966AF28BE0AF900F7200D /* StoryCollectionViewCell.swift */; };
 		8C8966B228BE0AF900F7200D /* StoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C8966B028BE0AF900F7200D /* StoryCollectionViewCell.xib */; };
 		8C8D852728BBB905009DBAB9 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8D852628BBB905009DBAB9 /* TestViewController.swift */; };
+		8C91738A28C9D4B500B9DD7A /* ReelsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C91738828C9D4B500B9DD7A /* ReelsCollectionViewCell.swift */; };
+		8C91738B28C9D4B500B9DD7A /* ReelsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C91738928C9D4B500B9DD7A /* ReelsCollectionViewCell.xib */; };
 		8C95C48F28B90EEF00E7351E /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C95C48E28B90EEF00E7351E /* UIView+Extension.swift */; };
 		8C95C49128B9109200E7351E /* UIVIewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C95C49028B9109200E7351E /* UIVIewController+Extension.swift */; };
 		8C95C49328BBB14200E7351E /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C95C49228BBB14200E7351E /* UserInfo.swift */; };
@@ -56,6 +59,7 @@
 		8C2350C528C720FB007900F9 /* UserFeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFeedModel.swift; sourceTree = "<group>"; };
 		8C2350C728C724ED007900F9 /* UserFeedDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFeedDataManager.swift; sourceTree = "<group>"; };
 		8C2350C928C8A0C8007900F9 /* DeleteUserFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteUserFeed.swift; sourceTree = "<group>"; };
+		8C2350CB28C9D31B007900F9 /* ReelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsViewController.swift; sourceTree = "<group>"; };
 		8C274EE028C10B9600396984 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
 		8C274EE128C10B9600396984 /* PostCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCollectionViewCell.xib; sourceTree = "<group>"; };
 		8C2F3FB328B605CE003A1AA3 /* Campstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Campstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +90,8 @@
 		8C8966AF28BE0AF900F7200D /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		8C8966B028BE0AF900F7200D /* StoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		8C8D852628BBB905009DBAB9 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		8C91738828C9D4B500B9DD7A /* ReelsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsCollectionViewCell.swift; sourceTree = "<group>"; };
+		8C91738928C9D4B500B9DD7A /* ReelsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReelsCollectionViewCell.xib; sourceTree = "<group>"; };
 		8C95C48E28B90EEF00E7351E /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		8C95C49028B9109200E7351E /* UIVIewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIewController+Extension.swift"; sourceTree = "<group>"; };
 		8C95C49228BBB14200E7351E /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
@@ -191,6 +197,9 @@
 				8C2350C328C71F14007900F9 /* App */,
 				8C2F3FBA28B605CE003A1AA3 /* ViewController.swift */,
 				8C2F3FBC28B605CE003A1AA3 /* Main.storyboard */,
+				8C91738828C9D4B500B9DD7A /* ReelsCollectionViewCell.swift */,
+				8C91738928C9D4B500B9DD7A /* ReelsCollectionViewCell.xib */,
+				8C2350CB28C9D31B007900F9 /* ReelsViewController.swift */,
 				8C8D852628BBB905009DBAB9 /* TestViewController.swift */,
 				8C2F3FBF28B605CF003A1AA3 /* Assets.xcassets */,
 				8C2F3FC128B605CF003A1AA3 /* LaunchScreen.storyboard */,
@@ -376,6 +385,7 @@
 				8C2F3FC328B605CF003A1AA3 /* LaunchScreen.storyboard in Resources */,
 				8C8966AA28BDF08400F7200D /* FeedTableViewCell.xib in Resources */,
 				8C2F3FC028B605CF003A1AA3 /* Assets.xcassets in Resources */,
+				8C91738B28C9D4B500B9DD7A /* ReelsCollectionViewCell.xib in Resources */,
 				8C7D3B5D28BFA8630067F028 /* ProfileCollectionViewCell.xib in Resources */,
 				8C34084C28C5CBC800DB7A66 /* TradeTableViewCell.xib in Resources */,
 				8C8966AE28BE066B00F7200D /* StoryTableViewCell.xib in Resources */,
@@ -445,6 +455,7 @@
 				8C2350CA28C8A0C8007900F9 /* DeleteUserFeed.swift in Sources */,
 				8C7D3B5C28BFA8630067F028 /* ProfileCollectionViewCell.swift in Sources */,
 				8C34085128C5E4B900DB7A66 /* FeedAPIInput.swift in Sources */,
+				8C2350CC28C9D31B007900F9 /* ReelsViewController.swift in Sources */,
 				8C34085528C5E5A200DB7A66 /* FeedDataManager.swift in Sources */,
 				8C2350C628C720FB007900F9 /* UserFeedModel.swift in Sources */,
 				8C34084828C5C88200DB7A66 /* TradeViewController.swift in Sources */,
@@ -456,6 +467,7 @@
 				8C2F3FB728B605CE003A1AA3 /* AppDelegate.swift in Sources */,
 				8C8966B128BE0AF900F7200D /* StoryCollectionViewCell.swift in Sources */,
 				8C2350C028C71AB2007900F9 /* FeedUploadModel.swift in Sources */,
+				8C91738A28C9D4B500B9DD7A /* ReelsCollectionViewCell.swift in Sources */,
 				8C34084E28C5D27A00DB7A66 /* TradeResultViewController.swift in Sources */,
 				8C8D852728BBB905009DBAB9 /* TestViewController.swift in Sources */,
 				8C2F3FB928B605CE003A1AA3 /* SceneDelegate.swift in Sources */,
