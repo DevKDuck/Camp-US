@@ -42,9 +42,14 @@ class LoginViewController: UIViewController {
         //회원가입정보를 전달받아서, TextField 데이터와 일치하면 로그인됨
         guard let userInfo = userInfo else { return }
         if userInfo.email == self.email && userInfo.password == self.password{
-            let goVC = storyboard?.instantiateViewController(withIdentifier: "TabbarViewController") as! UITabBarController
-            goVC.modalPresentationStyle = .fullScreen
-            self.present(goVC, animated: true)
+            
+            //Login은 Tabbar로 넘어가는 순간 필요없어지게 됨 UIwindowScene에 접근하여 화면을 대체하게 됨
+            let vc = storyboard?.instantiateViewController(withIdentifier: "TabbarViewController") as! UITabBarController
+            self.view.window?.windowScene?.keyWindow?.rootViewController = vc
+            
+//            let goVC = storyboard?.instantiateViewController(withIdentifier: "TabbarViewController") as! UITabBarController
+//            goVC.modalPresentationStyle = .fullScreen
+//            self.present(goVC, animated: true)
         }else{
    
         }

@@ -7,4 +7,5 @@ target 'Campstagram' do
 
   # Pods for Campstagram
 	pod 'Alamofire'
+
 end

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ldb-u8-9Yt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Re4-js-V6j">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -28,7 +28,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 <connections>
                                     <action selector="passwordTextFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="kMt-Ih-NNx"/>
                                 </connections>
@@ -535,7 +535,7 @@
                             <constraint firstItem="XMc-oj-9e9" firstAttribute="leading" secondItem="qVR-4z-An8" secondAttribute="leading" id="vc5-2j-D5C"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="릴스" id="zWq-jg-OAy"/>
+                    <tabBarItem key="tabBarItem" title="릴스" image="video.circle" catalog="system" id="zWq-jg-OAy"/>
                     <connections>
                         <outlet property="collectionView" destination="XMc-oj-9e9" id="Cyh-Aq-S1J"/>
                     </connections>
@@ -729,6 +729,7 @@
         <image name="person.crop.circle" catalog="system" width="128" height="121"/>
         <image name="plus.app" catalog="system" width="128" height="114"/>
         <image name="sun.and.horizon" catalog="system" width="128" height="80"/>
+        <image name="video.circle" catalog="system" width="128" height="121"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
