@@ -41,6 +41,10 @@
 		8C7DA54128D06E2500791DB1 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7DA54028D06E2500791DB1 /* VideoPlayerView.swift */; };
 		8C7DA54528D0776800791DB1 /* dummyVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8C7DA54428D0776800791DB1 /* dummyVideo.mp4 */; };
 		8C7DA54728D0778B00791DB1 /* dummyVideo2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8C7DA54628D0778B00791DB1 /* dummyVideo2.mp4 */; };
+		8C7DA55028D1AFC900791DB1 /* Login.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8C7DA54E28D1AFC900791DB1 /* Login.jpg */; };
+		8C7DA55128D1AFC900791DB1 /* Register.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8C7DA54F28D1AFC900791DB1 /* Register.jpg */; };
+		8C7DA55328D1BDC900791DB1 /* campuslogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C7DA55228D1BDC900791DB1 /* campuslogo.png */; };
+		8C7DA55528D1BEC900791DB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C7DA55428D1BEC900791DB1 /* Assets.xcassets */; };
 		8C8966A528BDED8300F7200D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8966A428BDED8300F7200D /* HomeViewController.swift */; };
 		8C8966A928BDF08400F7200D /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8966A728BDF08400F7200D /* FeedTableViewCell.swift */; };
 		8C8966AA28BDF08400F7200D /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C8966A828BDF08400F7200D /* FeedTableViewCell.xib */; };
@@ -90,6 +94,10 @@
 		8C7DA54028D06E2500791DB1 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		8C7DA54428D0776800791DB1 /* dummyVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = dummyVideo.mp4; sourceTree = "<group>"; };
 		8C7DA54628D0778B00791DB1 /* dummyVideo2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = dummyVideo2.mp4; sourceTree = "<group>"; };
+		8C7DA54E28D1AFC900791DB1 /* Login.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Login.jpg; sourceTree = "<group>"; };
+		8C7DA54F28D1AFC900791DB1 /* Register.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Register.jpg; sourceTree = "<group>"; };
+		8C7DA55228D1BDC900791DB1 /* campuslogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = campuslogo.png; sourceTree = "<group>"; };
+		8C7DA55428D1BEC900791DB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../Downloads/AppIcons (1)/Assets.xcassets"; sourceTree = "<group>"; };
 		8C8966A428BDED8300F7200D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8C8966A728BDF08400F7200D /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		8C8966A828BDF08400F7200D /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
@@ -205,10 +213,14 @@
 				8C2350C328C71F14007900F9 /* App */,
 				8C2F3FBA28B605CE003A1AA3 /* ViewController.swift */,
 				8C2F3FBC28B605CE003A1AA3 /* Main.storyboard */,
+				8C7DA55228D1BDC900791DB1 /* campuslogo.png */,
 				8C2350CB28C9D31B007900F9 /* ReelsViewController.swift */,
 				8C7DA53E28D06C5E00791DB1 /* ReelsCollectionCell.swift */,
 				8C7DA54028D06E2500791DB1 /* VideoPlayerView.swift */,
 				8C2F3FBF28B605CF003A1AA3 /* Assets.xcassets */,
+				8C7DA55428D1BEC900791DB1 /* Assets.xcassets */,
+				8C7DA54E28D1AFC900791DB1 /* Login.jpg */,
+				8C7DA54F28D1AFC900791DB1 /* Register.jpg */,
 				8C2F3FC128B605CF003A1AA3 /* LaunchScreen.storyboard */,
 				8C2F3FC428B605CF003A1AA3 /* Info.plist */,
 			);
@@ -392,15 +404,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C7DA55128D1AFC900791DB1 /* Register.jpg in Resources */,
 				8C274EE328C10B9600396984 /* PostCollectionViewCell.xib in Resources */,
 				8C2F3FC328B605CF003A1AA3 /* LaunchScreen.storyboard in Resources */,
 				8C34084C28C5CBC800DB7A66 /* TradeTableViewCell.xib in Resources */,
+				8C7DA55528D1BEC900791DB1 /* Assets.xcassets in Resources */,
 				8C8966AA28BDF08400F7200D /* FeedTableViewCell.xib in Resources */,
 				8C2F3FC028B605CF003A1AA3 /* Assets.xcassets in Resources */,
 				8C7D3B5D28BFA8630067F028 /* ProfileCollectionViewCell.xib in Resources */,
 				8C7DA54728D0778B00791DB1 /* dummyVideo2.mp4 in Resources */,
+				8C7DA55028D1AFC900791DB1 /* Login.jpg in Resources */,
 				8C8966AE28BE066B00F7200D /* StoryTableViewCell.xib in Resources */,
 				8C7DA54528D0776800791DB1 /* dummyVideo.mp4 in Resources */,
+				8C7DA55328D1BDC900791DB1 /* campuslogo.png in Resources */,
 				8C8966B228BE0AF900F7200D /* StoryCollectionViewCell.xib in Resources */,
 				8C2F3FBE28B605CE003A1AA3 /* Main.storyboard in Resources */,
 			);
@@ -635,6 +651,7 @@
 				DEVELOPMENT_TEAM = F2PAPBBTST;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Campstagram/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Camp-US";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -664,6 +681,7 @@
 				DEVELOPMENT_TEAM = F2PAPBBTST;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Campstagram/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Camp-US";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

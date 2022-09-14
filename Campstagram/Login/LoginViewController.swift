@@ -85,7 +85,8 @@ class LoginViewController: UIViewController {
         let font2 = UIFont.boldSystemFont(ofSize: 13)
         
         let color1 = UIColor.darkGray
-        let color2 = UIColor(named: "facebookColor") ?? .blue
+        let color2 = UIColor.white
+        //        let color2 = UIColor(named: "facebookColor") ?? .blue
         
         let attributes = generateButtonAttribute(self.registerButton, texts: text1, text2, fonts: font1, font2, colors: color1, color2)
         

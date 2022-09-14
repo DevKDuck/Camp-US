@@ -155,9 +155,8 @@ class RegisterViewController: UIViewController {
         let font1 = UIFont.systemFont(ofSize: 13)
         let font2 = UIFont.boldSystemFont(ofSize: 13)
         
-        let color1 = UIColor.darkGray
-        let color2 = UIColor(named: "facebookColor") ?? .blue
-        
+        let color1 = UIColor.white
+        let color2 = UIColor.systemIndigo
         let attributes = generateButtonAttribute(self.popToLoginButton, texts: text1, text2, fonts: font1, font2, colors: color1, color2)
         
         self.popToLoginButton.setAttributedTitle(attributes, for: .normal)
