@@ -135,7 +135,8 @@ class RegisterViewController: UIViewController {
         if isValidEmail && isValidName && isValidNickname && isValidPassword{
             self.signupButton.isEnabled = true
             UIView.animate(withDuration:0.33){
-                self.signupButton.backgroundColor = UIColor(named:"facebookColor")
+                self.signupButton.backgroundColor = UIColor.systemIndigo
+                //                self.signupButton.backgroundColor = UIColor(named:"facebookColor")
             }
           
         }else{

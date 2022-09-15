@@ -69,28 +69,6 @@
                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                         <state key="normal" title="Button" image="ic_home_comment"/>
                     </button>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQG-On-Igr">
-                        <rect key="frame" x="73" y="375" width="17" height="17"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="17" id="dbQ-4Z-QeR"/>
-                            <constraint firstAttribute="height" constant="17" id="e2J-N1-OdM"/>
-                        </constraints>
-                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                        <state key="normal" title="Button" image="ic_home_send"/>
-                    </button>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Pi-hD-eHP">
-                        <rect key="frame" x="293" y="375" width="17" height="17"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="17" id="Qpm-vx-zX6"/>
-                            <constraint firstAttribute="width" constant="17" id="Rgq-CP-Izf"/>
-                        </constraints>
-                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                        <state key="normal" title="Button" image="ic_bookmark_white"/>
-                        <state key="selected" image="ic_bookmark_black"/>
-                        <connections>
-                            <action selector="actionBookMark:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="5Y7-Ni-KTn"/>
-                        </connections>
-                    </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="좋아요 4개" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctu-vf-vKx">
                         <rect key="frame" x="10" y="403.5" width="49" height="13.5"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
@@ -98,13 +76,13 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gyeongdeok Camping용품" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f9J-Uu-cWO">
-                        <rect key="frame" x="10" y="427" width="300" height="10"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                        <rect key="frame" x="10" y="427" width="187" height="35"/>
+                        <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="16"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="l1V-H9-yxb">
-                        <rect key="frame" x="10" y="451.5" width="25" height="22"/>
+                        <rect key="frame" x="10" y="476.5" width="25" height="22"/>
                         <color key="backgroundColor" systemColor="systemGray3Color"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -113,7 +91,7 @@
                         </constraints>
                     </imageView>
                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="댓글 달기..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y5N-gB-UtG">
-                        <rect key="frame" x="42" y="445.5" width="268" height="34"/>
+                        <rect key="frame" x="42" y="470.5" width="64.5" height="34"/>
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits"/>
@@ -123,15 +101,11 @@
                     <constraint firstItem="q0I-fg-58a" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="3b9-O4-rnZ"/>
                     <constraint firstItem="f9J-Uu-cWO" firstAttribute="leading" secondItem="ctu-vf-vKx" secondAttribute="leading" id="5k6-co-EgV"/>
                     <constraint firstItem="njJ-BM-EKC" firstAttribute="top" secondItem="X43-nA-erG" secondAttribute="bottom" constant="10" id="Ak4-5M-k3L"/>
-                    <constraint firstItem="NQG-On-Igr" firstAttribute="leading" secondItem="fgH-ZF-WkC" secondAttribute="trailing" constant="13" id="BAU-Li-Sfr"/>
                     <constraint firstItem="y5N-gB-UtG" firstAttribute="leading" secondItem="l1V-H9-yxb" secondAttribute="trailing" constant="7" id="BQR-0V-X1W"/>
                     <constraint firstItem="l1V-H9-yxb" firstAttribute="top" secondItem="f9J-Uu-cWO" secondAttribute="bottom" constant="13" id="BWD-3d-OHz"/>
                     <constraint firstItem="f9J-Uu-cWO" firstAttribute="top" secondItem="ctu-vf-vKx" secondAttribute="bottom" constant="10" id="I3f-4c-CbI"/>
                     <constraint firstItem="X43-nA-erG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="IGL-9t-n1l"/>
-                    <constraint firstAttribute="trailing" secondItem="4Pi-hD-eHP" secondAttribute="trailing" constant="10" id="KVi-RO-QsR"/>
-                    <constraint firstItem="4Pi-hD-eHP" firstAttribute="centerY" secondItem="NQG-On-Igr" secondAttribute="centerY" id="KXl-iJ-DxA"/>
                     <constraint firstItem="q0I-fg-58a" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="NKM-Zs-CZv"/>
-                    <constraint firstItem="f9J-Uu-cWO" firstAttribute="trailing" secondItem="4Pi-hD-eHP" secondAttribute="trailing" id="OiQ-Wk-xf5"/>
                     <constraint firstItem="ctu-vf-vKx" firstAttribute="top" secondItem="fgH-ZF-WkC" secondAttribute="bottom" constant="10" id="Qzc-Le-oh4"/>
                     <constraint firstItem="ctu-vf-vKx" firstAttribute="leading" secondItem="njJ-BM-EKC" secondAttribute="leading" id="Rwp-Sm-oT2"/>
                     <constraint firstAttribute="trailing" secondItem="X43-nA-erG" secondAttribute="trailing" id="SMr-ct-1bJ"/>
@@ -139,12 +113,9 @@
                     <constraint firstItem="l1V-H9-yxb" firstAttribute="leading" secondItem="q0I-fg-58a" secondAttribute="leading" id="UuE-ml-x5S"/>
                     <constraint firstAttribute="trailing" secondItem="192-SM-t7j" secondAttribute="trailing" constant="10" id="Wlz-LV-qpZ"/>
                     <constraint firstItem="fgH-ZF-WkC" firstAttribute="leading" secondItem="njJ-BM-EKC" secondAttribute="trailing" constant="13" id="bss-AQ-c6d"/>
-                    <constraint firstItem="4Pi-hD-eHP" firstAttribute="top" secondItem="X43-nA-erG" secondAttribute="bottom" constant="10" id="dOj-eA-Vze"/>
                     <constraint firstItem="y5N-gB-UtG" firstAttribute="height" secondItem="l1V-H9-yxb" secondAttribute="height" multiplier="1.36" id="hdB-O9-FIB"/>
                     <constraint firstItem="192-SM-t7j" firstAttribute="centerY" secondItem="q0I-fg-58a" secondAttribute="centerY" id="j4z-1r-TbF"/>
-                    <constraint firstItem="y5N-gB-UtG" firstAttribute="trailing" secondItem="4Pi-hD-eHP" secondAttribute="trailing" id="k6M-We-Axp"/>
                     <constraint firstItem="cPq-rV-UQh" firstAttribute="leading" secondItem="q0I-fg-58a" secondAttribute="trailing" constant="10" id="kqB-ie-gjN"/>
-                    <constraint firstItem="NQG-On-Igr" firstAttribute="centerY" secondItem="fgH-ZF-WkC" secondAttribute="centerY" id="nny-0m-HgF"/>
                     <constraint firstItem="fgH-ZF-WkC" firstAttribute="centerY" secondItem="njJ-BM-EKC" secondAttribute="centerY" id="oRA-jU-Rnq"/>
                     <constraint firstItem="X43-nA-erG" firstAttribute="top" secondItem="q0I-fg-58a" secondAttribute="bottom" constant="10" id="xiX-GN-zOe"/>
                     <constraint firstItem="y5N-gB-UtG" firstAttribute="centerY" secondItem="l1V-H9-yxb" secondAttribute="centerY" id="zaM-41-hSv"/>
@@ -154,7 +125,6 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
-                <outlet property="buttonIsBookMark" destination="4Pi-hD-eHP" id="jzz-3e-bIY"/>
                 <outlet property="buttonIsHeart" destination="njJ-BM-EKC" id="DYS-Bz-mmr"/>
                 <outlet property="imageViewFeed" destination="X43-nA-erG" id="ztf-xH-KIQ"/>
                 <outlet property="imageViewMyProfile" destination="l1V-H9-yxb" id="cHL-ku-U67"/>
@@ -167,13 +137,10 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="ic_bookmark_black" width="512" height="512"/>
-        <image name="ic_bookmark_white" width="512" height="512"/>
         <image name="ic_home_comment" width="512" height="512"/>
         <image name="ic_home_heart" width="512" height="512"/>
         <image name="ic_home_heart_full" width="512" height="512"/>
         <image name="ic_home_more" width="512" height="512"/>
-        <image name="ic_home_send" width="512" height="512"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="systemGray3Color">
             <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
